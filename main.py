@@ -108,3 +108,11 @@ async def lier(interaction: discord.Interaction, pseudo_epic: str):
 
     view = StatsView(data)
     await interaction.followup.send(embed=embed_succes, view=view, ephemeral=True)
+
+
+@bot.event
+async def on_ready():
+    await tree.sync()
+    print("Connecté ! Bot en ligne.")
+
+bot.run("TON_TOKEN_DISCORD")
