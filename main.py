@@ -5,7 +5,7 @@ from discord.ext import commands
 
 intents = discord.Intents.default()
 bot = commands.Bot(command_prefix="!", intents=intents)
-tree = app_commands.CommandTree(bot)
+tree = bot.tree
 
 FORTNITE_API_KEY = "4e63b859-865a-4fb8-bec9-90f2504dce4c"
 # --- 1. Requête vers Fortnite-API.com ---
