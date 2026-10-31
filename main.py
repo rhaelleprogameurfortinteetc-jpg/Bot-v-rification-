@@ -1,8 +1,7 @@
- import aiohttp FORTNITE_API_KEY = "4e63b859-865a-4fb8-bec9-90f2504dce4c"
-
+ import aiohttp 
 import discord
 from discord import app_commands
-
+FORTNITE_API_KEY = "4e63b859-865a-4fb8-bec9-90f2504dce4c"
 # --- 1. Requête vers Fortnite-API.com ---
 async def get_fortnite_stats(username: str):
     url = f"https://fortnite-api.com/v1/stats/br/v2?name={username}"
