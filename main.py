@@ -1,4 +1,4 @@
- import aiohttp 
+import aiohttp 
 import discord
 from discord import app_commands
 FORTNITE_API_KEY = "4e63b859-865a-4fb8-bec9-90f2504dce4c"
