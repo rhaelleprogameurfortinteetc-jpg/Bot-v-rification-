@@ -113,6 +113,6 @@ async def lier(interaction: discord.Interaction, pseudo_epic: str):
 @bot.event
 async def on_ready():
     await tree.sync()
-    print("Connecté ! Bot en ligne.")
+    
 
-bot.run("TON_TOKEN_DISCORD")
+bot.run(os.getenv("DISCORD_TOKEN"))
